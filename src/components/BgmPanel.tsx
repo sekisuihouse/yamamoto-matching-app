@@ -34,7 +34,7 @@ export const BgmPanel = () => {
 
   return (
     <section className="rounded-2xl border border-white/50 bg-white/80 p-5 shadow-glow backdrop-blur">
-      <audio ref={audioRef} src="/bgm/party-placeholder.mp3" loop preload="none" />
+      <audio ref={audioRef} src={`${import.meta.env.BASE_URL}bgm/party-placeholder.mp3`} loop preload="none" />
       <div className="flex items-center justify-between gap-4">
         <div>
           <h2 className="text-lg font-bold text-slate-900">BGM</h2>
